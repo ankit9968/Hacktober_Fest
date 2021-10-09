@@ -22,6 +22,16 @@ void display(node *head)
         n = n->next;
     }
 }
+void InsertNodeAtEnd(node **head,int val) //function to insert a node at end of linked list
+{
+    node *temp=new node(val);
+    node *p=*head;
+    while(p->next!=NULL)
+    {
+        p=p->next;
+    }
+    p->next=temp;
+}
 
 int main()
 {
